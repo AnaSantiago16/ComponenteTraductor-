@@ -1,5 +1,7 @@
 
 Listado y código de algunos métodos o propiedades más relevantes
+
+
   -constructor
   Inicializa el combobox con los idiomas disponibles ("Español", "Inglés", "Francés")
   Configura el tamaño preferido del componente
