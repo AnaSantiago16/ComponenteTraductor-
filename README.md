@@ -90,13 +90,3 @@ traductor.setFont(new Font("Arial", Font.BOLD, 14));
 ## 📹 Video Demostrativo
 [![Ver demostración](https://img.youtube.com/vi/A8xkXDZQa8o/0.jpg)](https://youtu.be/A8xkXDZQa8o)
 ```
-
-Este formato incluye:
-1. Encabezados claros con emojis
-2. Código bien formateado en bloques
-3. Listas organizadas
-4. Sección de video con imagen clickeable
-5. Destacados visuales para características importantes
-6. Estructura consistente y fácil de leer
-
-Puedes copiar este contenido directamente a tu archivo README.md en GitHub o cualquier otro sistema que soporte Markdown.
