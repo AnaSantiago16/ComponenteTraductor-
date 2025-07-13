@@ -1,66 +1,102 @@
+Aquí tienes el contenido formateado para un archivo README.md:
 
-Listado y código de algunos métodos o propiedades más relevantes
+```markdown
+# BotonTraductor - Componente de Traducción para Swing
 
+## 🛠️ Métodos y Propiedades Relevantes
 
-  -constructor
-  Inicializa el combobox con los idiomas disponibles ("Español", "Inglés", "Francés")
-  Configura el tamaño preferido del componente
-  Añade el ActionListener para manejar los cambios de idioma
-  
-  -Metodos de traduccion
-  private void traducirEtiquetas(String idiomaDestino)
-    coordina el porceso de traduccion de todas las etiquetas
-    
-  private void traducirComponentes(Container contenedor, String idiomaDestino)
-    Recorre recursivamente los componentes buscando JLabels para traducir  
-    
-  private String traducir(String texto, String idiomaOrigen, String idiomaDestino)
-    Realiza la llamada a la API MyMemory para obtener la traducción
-    Maneja la codificación URL y el parsing de la respuesta JSON
+### Constructor
+```java
+public BotonTraductor()
+```
+- Inicializa el combobox con los idiomas disponibles ("Español", "Inglés", "Francés")
+- Configura el tamaño preferido del componente
+- Añade el ActionListener para manejar los cambios de idioma
 
-  -Propiedades Principales
-  private static final String API_URL
-    Endpoint de la API de MyMemory Translate
-    
-  private final String[] codigosIdiomas
-    Códigos ISO de los idiomas soportados (es, en, fr)
+### Métodos de Traducción
+```java
+private void traducirEtiquetas(String idiomaDestino)
+```
+Coordina el proceso de traducción de todas las etiquetas
 
+```java
+private void traducirComponentes(Container contenedor, String idiomaDestino)
+```
+Recorre recursivamente los componentes buscando JLabels para traducir
 
-Breve explicación del componente :
-  El BotonTraductor es un JComboBox especializado que permite traducir dinámicamente los      textos de las JLabels en una interfaz gráfica Swing. Sus características principales son:
+```java
+private String traducir(String texto, String idiomaOrigen, String idiomaDestino)
+```
+Realiza la llamada a la API MyMemory para obtener la traducción  
+Maneja la codificación URL y el parsing de la respuesta JSON
 
-  -  Integración con API externa: Utiliza el servicio gratuito MyMemory Translate
-  -  Traducción automática: Detecta y traduce todos los JLabels encontrados
-  -  Interfaz sencilla: Se integra como un combobox normal en cualquier contenedor Swing
-  -  Procesamiento asíncrono: Las traducciones se realizan en segundo plano sin bloquear la UI
-  -  Manejo de errores: Muestra claramente cuando una traducción falla
+### Propiedades Principales
+```java
+private static final String API_URL
+```
+Endpoint de la API de MyMemory Translate
 
-Instrucciones de uso:
+```java
+private final String[] codigosIdiomas
+```
+Códigos ISO de los idiomas soportados (es, en, fr)
 
- Requisitos
-  - JDK 8 o superior
-  - Dependencia org.json (para parsear respuestas JSON)
-  - Conexión a Internet (para acceder a la API)
-Configuración opcional
-  // Cambiar tamaño
-    traductor.setPreferredSize(new Dimension(200, 30));
+## 📌 Descripción del Componente
 
-  // Cambiar fuente
-    traductor.setFont(new Font("Arial", Font.BOLD, 14));
-    
-  Consejos de Uso
+El `BotonTraductor` es un JComboBox especializado que permite traducir dinámicamente los textos de las JLabels en una interfaz gráfica Swing. 
 
-  - Para mejores resultados, usa textos cortos (la API gratuita tiene limitaciones)
-  - Si necesitas traducir muchos textos, considera implementar un sistema de caché
-  - En entornos productivos, evalúa usar una API con clave (como DeepL o Google Translate)
-  - El componente funciona mejor con JLabels directamente en el contenedor principal
+**Características principales:**
+- ✅ Integración con API externa (MyMemory Translate)
+- 🔄 Traducción automática de JLabels
+- 🖥️ Interfaz sencilla tipo combobox
+- ⚡ Procesamiento asíncrono (no bloqueante)
+- ❌ Manejo visual de errores
 
-  Limitaciones Conocidas
-  - La API gratuita tiene límites de uso
-  - Las traducciones muy largas pueden truncarse
-  - Requiere conexión a Internet estable
+## 🚀 Instrucciones de Uso
 
+### Requisitos
+- JDK 8+
+- Dependencia `org.json`
+- Conexión a Internet
 
+### Configuración básica
+```java
+// Agregar a un contenedor
+JPanel panel = new JPanel();
+BotonTraductor traductor = new BotonTraductor();
+panel.add(traductor);
+```
 
-Video: 
-https://youtu.be/A8xkXDZQa8o
+### Personalización
+```java
+// Cambiar tamaño
+traductor.setPreferredSize(new Dimension(200, 30));
+
+// Cambiar fuente
+traductor.setFont(new Font("Arial", Font.BOLD, 14));
+```
+
+## 💡 Consejos de Uso
+- ✂️ Usar textos cortos (mejor rendimiento)
+- 💾 Implementar caché para muchas traducciones
+- 🔐 Considerar APIs premium para producción
+- 🏷️ Usar JLabels directamente en contenedores principales
+
+## ⚠️ Limitaciones
+- 📶 Requiere conexión estable a Internet
+- 🚧 Límites en API gratuita
+- ✂️ Posible truncamiento de textos largos
+
+## 📹 Video Demostrativo
+[![Ver demostración](https://img.youtube.com/vi/A8xkXDZQa8o/0.jpg)](https://youtu.be/A8xkXDZQa8o)
+```
+
+Este formato incluye:
+1. Encabezados claros con emojis
+2. Código bien formateado en bloques
+3. Listas organizadas
+4. Sección de video con imagen clickeable
+5. Destacados visuales para características importantes
+6. Estructura consistente y fácil de leer
+
+Puedes copiar este contenido directamente a tu archivo README.md en GitHub o cualquier otro sistema que soporte Markdown.
