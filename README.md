@@ -1,7 +1,4 @@
-Aquí tienes el contenido formateado para un archivo README.md:
-
-```markdown
-# BotonTraductor - Componente de Traducción para Swing
+ BotonTraductor - Componente de Traducción para Swing
 
 ## 🛠️ Métodos y Propiedades Relevantes
 
